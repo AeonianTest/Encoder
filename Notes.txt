@@ -1,0 +1,23 @@
+It seems to make an executable binary capable of being able to run anywhere in terminal, we have to move the exe to the system path.
+I imagine the process of installing this in a new system would involve a simple (hopefully somewhat portable) shell script.
+This would just call a make file that turns c code into system local exe, then move the file to the local System PATH (look into this)
+
+Ok we can just make add our neccecary file path to location of exe to the enviroment PATH variable. 
+Look into creating a bin folder for personal custom exes, and adding it permenantly to our PATH for zsh
+https://osxdaily.com/2021/11/18/where-the-zshrc-file-is-located-on-mac/ 
+
+I will be undertaking this project under a spiral like development approach. Lets get basic functioanlity first
+
+Below are resources im using.
+https://www.cryptool.org/en/cto/aes-step-by-step
+https://www.youtube.com/watch?v=rmqWaktEpcw
+https://braincoke.fr/blog/2020/08/the-aes-key-schedule-explained/#aes-in-summary 
+https://braincoke.fr/blog/2020/08/the-aes-encryption-algorithm-explained/#aes-in-summary
+
+words may contain values such as '\219'. I believe these are octal based escape characters used in lieu of what they represent, as the char is too exotic?
+
+As i am working with a well formalised specification of just AES - 128, many of the data used in cryptography can be pre-computed.
+For instance the SBox and round constants
+
+TODO
+    -Work out how to write each Round Key to their strings.

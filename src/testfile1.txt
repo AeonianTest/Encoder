@@ -1,0 +1,4 @@
+f
+This is a test file to be read from
+This is line 3 to test newlines
+4th line to evaluate before EOF
